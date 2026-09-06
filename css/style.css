@@ -1,0 +1,171 @@
+/* 紀尾井ワークス 共通スタイル
+   白地に濃紺（#1b2a4a）の一色。装飾なし。 */
+
+:root {
+  --navy: #1b2a4a;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.8;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: var(--navy);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 共通の横幅 */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+.site-header {
+  border-bottom: 1px solid var(--navy);
+}
+
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* 本文 */
+main {
+  padding: 40px 0 64px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 48px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--navy);
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+ul, ol {
+  margin: 0 0 16px;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.lead {
+  font-size: 1.0625rem;
+  margin-bottom: 24px;
+}
+
+/* ボタン */
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--navy);
+}
+
+.button:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.button-area {
+  margin: 24px 0;
+}
+
+/* フッター */
+.site-footer {
+  border-top: 1px solid var(--navy);
+  font-size: 0.875rem;
+}
+
+.site-footer .container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* スマホ */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.375rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  .button {
+    display: block;
+    text-align: center;
+  }
+}
