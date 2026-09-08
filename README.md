@@ -13,6 +13,7 @@ flow.html       導入の流れとFAQ
 contact.html    お問い合わせ
 en/index.html   英語のデモページ（架空の体験工房の紹介ページ）
 css/style.css   全ページ共通のスタイル
+promo/          告知用画像（thumb1〜3.png, cover.png）と生成スクリプト make_images.py
 ```
 
 ## 編集のしかた
