@@ -169,3 +169,17 @@ li {
     text-align: center;
   }
 }
+
+/* 特定商取引法に基づく表記 */
+.notice {
+  margin: 0;
+}
+
+.notice dt {
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.notice dd {
+  margin: 0;
+}
