@@ -13,6 +13,7 @@ flow.html       導入の流れとFAQ
 contact.html    お問い合わせ
 tokushoho.html  特定商取引法に基づく表記
 en/index.html   英語のデモページ（架空の体験工房の紹介ページ）
+en/ryokan/index.html  英語のデモページ（架空の温泉旅館の紹介ページ）
 css/style.css   全ページ共通のスタイル
 ```
 
